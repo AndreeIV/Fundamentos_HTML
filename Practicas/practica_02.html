@@ -1,31 +1,388 @@
 <!DOCTYPE html>
 <!-- Cambiar el idioma -->
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <!-- Titulo de la Página-->
-        <title>Desarrollo Web</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="html5,css,javascript,desarrollo web">
-        <meta name="author" content="Jhonathan Andree Ismodes Orbegozo">
+    <!-- Titulo de la Página-->
+    <title>Lugares Turísticos del Perú</title>
 
-        <!-- Para los estilos css y el icono -->
-        <link rel="shortcut icon" href="../img/rocket_space_ios_icon_218536.png" type="image/x-icon">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="../CSS/ejemplo.css">
-    </head>
-    <body>
-        
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html5,css,javascript,desarrollo web">
+    <meta name="author" content="Jhonathan Andree Ismodes Orbegozo">
+
+    <!-- Para los estilos css y el icono -->
+    <link rel="shortcut icon" href="../Practicas/img/Peru_bandera.png" type="image/x-icon">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../CSS/ejemplo.css">
+</head>
+
+<body
+    style="height: 100vh; font-family: Arial, Helvetica, sans-serif; width: 100wh; text-align: start; display: flex; flex-direction: column;">
+
+    <header style="background-color: black;">
+        <nav>
+            <ul style="list-style-type: none;;display: flex; gap: 20px; margin: 30px 0;">
+                <li><a href="#" style="text-decoration: none; color: white;">Inicio</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">Acerca de</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">Servicio</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <h1 id="Inicio" style="text-align: center; color: darkred; font-size: 50px;">Lugares Turísticos del Perú</h1>
+    <br>
+
+    <!-- Iquitos -->
+    <div style="margin: 0px 20px;">
+        <h2>Iquitos</h2>
+
+        <p>Iquitos es una ciudad peruana ubicada en la región Loreto, conocida como la "Puerta de la Amazonía" por su
+            ubicación geográfica en el corazón de la selva amazónica. Es la ciudad más grande del mundo inaccesible por
+            carretera, conectada principalmente por vía fluvial y aérea.Destaca por su vibrante escena musical,
+            representada por grupos como Explosión de Iquitos, que fusionan ritmos locales con estilos modernos. Este
+            grupo ha realizado conciertos en ciudades como Tarapoto, Pucallpa y Lima, destacando su energía en
+            presentaciones como el Carnaval de Pucallpa 2024 y eventos en Piura.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?q=Iquitos&sca_esv=db967faadd0571b6&rlz=1C1RXQR_enPE1128PE1128&udm=2&biw=812&bih=762&sxsrf=AHTn8zpgOXFN--uKU9aIQhB4BHU53OuX3A%3A1742690644103&ei=VFnfZ5WDBpnL5OUPk4v8wAs&ved=0ahUKEwiV_a3G_J6MAxWZJbkGHZMFH7gQ4dUDCBA&uact=5&oq=Iquitos&gs_lp=EgNpbWciB0lxdWl0b3MyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAESKkQUABYuQxwAXgAkAEAmAH6AaABlQqqAQUwLjUuMrgBA8gBAPgBAZgCCKACwAqoAgrCAgoQIxgnGMkCGOoCwgIHECMYJxjJAsICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQOYAwqSBwUxLjUuMqAHiCayBwUwLjUuMrgHtgo&sclient=img"
+                target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/iquitos.jpg" alt="Iquitos">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Atracciones Urbana1s</p>
+                        <li>Mercado de Belén</li>
+                        <li>Plaza de Armas</li>
+                        <li>Malecón Tarapacá</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Cultura y Arquitectura</p>
+                        <li>Catedral de Iquitos</li>
+                        <li>Museo de Culturas indígenas</li>
+                        <li>Ruta de las Casonas</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Naturaleza y Vida Silvestre</p>
+                        <li>Reserva Nacional Pacaya Samiria</li>
+                        <li>Isla de los Monos</li>
+                        <li>Fundo Pedrito</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/16dNkMMQpERukEkCA" target="_blank"
+                                rel="noopener noreferrer">Iquitos</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254799.9074781464!2d-73.44811475207696!3d-3.755980405105777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea10b0e440c1cb%3A0x9210b8d7040a6692!2sIquitos!5e0!3m2!1ses!2spe!4v1742689732092!5m2!1ses!2spe"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
 
 
+    <!-- Machu Picchu-->
+    <div style="margin: 0px 20px;">
+        <h2>Machu Picchu</h2>
+
+        <p>Machu Picchu es una ciudadela inca del siglo XV ubicada en los Andes peruanos, declarada Patrimonio de la
+            Humanidad (1983) y una de las 7 Maravillas del Mundo Moderno (2007). Su nombre original se desconoce, pero
+            se cree que fue una residencia imperial y centro ceremonial construido durante el reinado de Pachacútec,
+            emperador que expandió el Imperio Inca. Destaca por su ingeniería inca: bloques de piedra tallados sin
+            mortero, sistemas de drenaje y terrazas agrícolas que adaptan la estructura al relieve montañoso. Aunque su
+            función exacta sigue siendo un misterio, se especula que fue un santuario sagrado o lugar de iniciación de
+            sacerdotes.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?sca_esv=123f44fb72ad38df&rlz=1C1RXQR_enPE1128PE1128&sxsrf=AHTn8zq2TjayNOd_Vvwg1Ev6Gptdr6MOHA:1742691447525&q=machu+picchu&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvK9uZj3HA_MTJAA6lXR8yQElaIApxtef1-RKg2CcwxXYsQSt6QRAacgvTpE0Simnyb0295toDjMJH3rPeItAov1yQPEEtw-68vDEEKtcZRAiIumLBB-TNJyyLDHLqmcpMnVRIdaupEzk4gTESnkNc-0pTnVB5RKibwK0AtM6cgCMyvm74xP43jrCo83VzJuGzC78JGg&sa=X&sqi=2&ved=2ahUKEwi2_brF_56MAxXmO7kGHT79IAQQtKgLegQIEBAB&biw=812&bih=762&dpr=1.25"
+                target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/machu_picchu.jpg" alt="Iquitos">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Atracciones Arqueológicas</p>
+                        <li>Plaza Sagrada</li>
+                        <li>Templo de las Tres Ventanas</li>
+                        <li>Templo del Cóndor</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Montañas y Senderos</p>
+                        <li>Huayna Picchu</li>
+                        <li>Montaña Machu Picchu</li>
+                        <li>Puente Inca</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ingeniería y vida cotidiana</p>
+                        <li>Terrazas agrícolas</li>
+                        <li>Escaleras de Fuentes</li>
+                        <li>Baños del Inca</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/DQtvsD92D9rp1i2T6" target="_blank"
+                                rel="noopener noreferrer">Machu Picchu</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15539.9493302841!2d-72.55556185147503!3d-13.163198594718887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d9a5f89555555%3A0x3a10370ea4a01a27!2sSantuario%20Hist%C3%B3rico%20de%20Machu%20Picchu!5e0!3m2!1ses!2spe!4v1742691247287!5m2!1ses!2spe"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
+
+    <!-- Lago Titicaca -->
+    <div style="margin: 0px 20px;">
+        <h2>Lago Titicaca</h2>
+
+        <p>El Lago Titicaca, ubicado en los Andes centrales entre Perú y Bolivia, es el lago navegable más alto del mundo (3,812 msnm). Con una superficie de 8,372 km² (56% en Perú y 44% en Bolivia), destaca por su profundidad máxima de 281 metros y su importancia cultural como origen mítico del cosmos inca. Dividido en dos cuerpos de agua por el estrecho de Tiquina, con aguas dulces y fluctuaciones estacionales en su nivel. Además, Alberga especies como la rana gigante del Titicaca (Telmatobius) y peces endémicos como el Orestias.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?q=Lago+Titicaca&sca_esv=db967faadd0571b6&rlz=1C1RXQR_enPE1128PE1128&udm=2&biw=812&bih=762&sxsrf=AHTn8zp8y66Ad2BMveQW8u91okIy1Ngv6A%3A1742692754758&ei=kmHfZ6T_Leea5OUP17OjkQs&ved=0ahUKEwikkOa0hJ-MAxVnDbkGHdfZKLIQ4dUDCBA&uact=5&oq=Lago+Titicaca&gs_lp=EgNpbWciDUxhZ28gVGl0aWNhY2EyDRAAGIAEGLEDGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIoB9QAFiEGHAAeACQAQCYAbABoAGAEaoBBDAuMTO4AQPIAQD4AQGYAg2gAoMSwgIHECMYJxjJAsICChAAGIAEGEMYigXCAggQABiABBixA8ICBhAAGAMYCpgDAJIHBDAuMTOgB-1FsgcEMC4xM7gHgxI&sclient=img" target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/lago_titicaca.jpg" alt="Lago Titicaca">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Naturaleza y Cultura</p>
+                        <li>Islas flotantes de los Uros</li>
+                        <li>Isla de Taquile</li>
+                        <li>Isla de Amantani</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Sitios Historicos y arqueológicas</p>
+                        <li>Sillustani</li>
+                        <li>Isla del Sol (Bolivia)</li>
+                        <li>Copacabana (Bolivia)</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Cultura y Artesania</p>
+                        <li>Sombreros de totoras</li>
+                        <li>Fiestas y danzas</li>
+                        <li>Hospedaje comunitario</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/vJ4LAHuT5Y5NEWi79" target="_blank" rel="noopener noreferrer">Lago Titicaca</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929269.943564711!2d-71.94359402996525!3d-15.89975976520836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d9b22f6af7c75%3A0xf682724d4df71dc!2sTiticaca!5e0!3m2!1ses!2spe!4v1742692576294!5m2!1ses!2spe" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
 
 
-        <!-- Importar los scripts -->
-        <!-- <script src="../Javascript/ejemplo.js" async defer></script> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-    </body>
+    <!-- Arequipa -->
+    <div style="margin: 0px 20px;">
+        <h2>Arequipa</h2>
+
+        <p>Conocida como la ciudad blanca, Arequipa es uno de los lugares más hermosos de Perú, con sus casas de piedra volcánica blanca, que junto al casco histórico fueron declarados Patrimonio de la Humanidad por la UNESCO. Puedes conocer la Plaza de Armas, la Catedral de Arequipa, la más grande e importante de la ciudad, la iglesia de La Compañía, el Monasterio de Santa Catalina entre otros. Además, Arequipa tiene una ubicación bastante estratégica, ya que está cerca de Cusco, así como la ruta para quienes cruzan la frontera con Chile.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?q=Arequipa&sca_esv=db967faadd0571b6&rlz=1C1RXQR_enPE1128PE1128&udm=2&biw=812&bih=762&sxsrf=AHTn8zp8y66Ad2BMveQW8u91okIy1Ngv6A%3A1742692754758&ei=kmHfZ6T_Leea5OUP17OjkQs&ved=0ahUKEwikkOa0hJ-MAxVnDbkGHdfZKLIQ4dUDCBA&uact=5&oq=Arequipa&gs_lp=EgNpbWciCEFyZXF1aXBhMg0QABiABBixAxhDGIoFMgUQABiABDIIEAAYgAQYsQMyBRAAGIAEMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiSHlAAWKUdcAN4AJABAJgBvwGgAYAMqgEDMC45uAEDyAEA-AEBmAIMoAKNDagCCsICChAjGCcYyQIY6gLCAgcQIxgnGMkCwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAZgDBpIHBTMuOC4xoAehMrIHBTAuOC4xuAfyDA&sclient=img" target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/arequipa.jpg" alt="Arequipa">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Naturaleza y Cultura</p>
+                        <li>Volcán Misti</li>
+                        <li>Mirador de Yanahuara</li>
+                        <li>Cañón del Colca</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Sitios Historicos y arqueológicas</p>
+                        <li>Monasterio de Santa Catalina</li>
+                        <li>Quebrada de la Vaca (Chala)</li>
+                        <li>Catedral de Arequipa</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Cultura y Artesania</p>
+                        <li>Ruta del sillar</li>
+                        <li>Casa Museo Mario Vargas Llosa</li>
+                        <li>Picanterías de San Lázaro</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/m2SNpYPo4PJkfWd67" target="_blank" rel="noopener noreferrer">Arequipa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122477.09131295941!2d-71.62141327158184!3d-16.404036297166922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a487785b9b3%3A0xa3c4a612b9942036!2sArequipa!5e0!3m2!1ses!2spe!4v1742692827329!5m2!1ses!2spe" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
+
+
+    <!-- Oasis de huacachina -->
+    <div style="margin: 0px 20px;">
+        <h2>Oasis de Huacachina</h2>
+
+        <p>El Oasis de Huacachina se encuentra a unos 5 kilómetros de la ciudad de Ica, en medio del desierto costero. En el destino puedes disfrutar de muchas actividades, como un paseo en buggy por el desierto y el sandboarding en sus dunas. También vale la pena ver la puesta de sol sobre el oasis. En los alrededores del oasis hay otras atracciones que puedes disfrutar, como islas, área de reserva, bodegas, museos, cañones y mucho más. Como los días allá siempre son soleados, puedes visitar el destino en cualquier época del año.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?q=Oasis+de+Huacachina&sca_esv=123f44fb72ad38df&rlz=1C1RXQR_enPE1128PE1128&udm=2&biw=812&bih=762&sxsrf=AHTn8zqyRCHY5UuOQ-Dmnix0JCCZZxpjlw%3A1742693317450&ei=xWPfZ7OeG-WChuMP_brbiA8&ved=0ahUKEwjzlI7Bhp-MAxVlgWEGHX3dFvEQ4dUDCBA&uact=5&oq=Oasis+de+Huacachina&gs_lp=EgNpbWciE09hc2lzIGRlIEh1YWNhY2hpbmEyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI3EVQzyhYt0RwA3gAkAEAmAGvAaABrBiqAQQwLjE5uAEDyAEA-AEBmAIWoALtGcICBhAAGAcYHsICBxAjGCcYyQLCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIIEAAYgAQYsQOYAwCIBgGSBwQzLjE5oAebaLIHBDAuMTm4B-IZ&sclient=img" target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/oasis_de_huacachina.jpg" alt="oasis de Huacachina">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Naturaleza y Cultura</p>
+                        <li>Laguna esmeralda</li>
+                        <li>Dunas del desierto de Ica</li>
+                        <li>Mirador de la Duna Norte</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Sitios Historicos y arqueológicas</p>
+                        <li>Biblioteca Abraham Valdelomar</li>
+                        <li>Zona Reservada Laguna de Huacachina</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Cultura y Artesania</p>
+                        <li>Princesa Huacca China</li>
+                        <li>Sirena del oasis</li>
+                        <li>Visitas guiadas</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/vY3LHuLyLidQgrbf6" target="_blank" rel="noopener noreferrer">Oasis de Huacachina</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.8160926399114!2d-75.76481307804872!3d-14.088031173757457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e3011b5e550b%3A0x267e9f6d8cbf430c!2sOasis%20de%20la%20Huachachina!5e0!3m2!1ses!2spe!4v1742693416464!5m2!1ses!2spe" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
+
+
+    <!-- Valle Sagrado -->
+    <div style="margin: 0px 20px;">
+        <h2>Valle Sagrado</h2>
+
+        <p>El Valle Sagrado está situado al noreste de Cusco, a una altitud de 2.000 a 2.800 metros sobre el nivel del mar, entre las poblaciones de Pisac y Ollantaytambo. Encontrarás hermosas vistas de montañas, lagunas turquesas y mucho más. El Valle Sagrado de los Incas está compuesto por 14 ciudades y pueblos, pero los recorridos suelen consistir en Pisac, Ollantaytambo y Chinchero. Puedes disfrutar de caminatas en la laguna de Piuray, conocer la historia antropológica en el Museo Inkari y aprender sobre las tradiciones del lugar en las diversas comunidades de Lamay.</p>
+        <strong>Hacer Click en la imagen</strong>
+        <div style="display: flex; gap: 30px; justify-content: start;">
+            <a href="https://www.google.com/search?sca_esv=123f44fb72ad38df&rlz=1C1RXQR_enPE1128PE1128&sxsrf=AHTn8zouWAcpem0jiFRQw89TAA5qTKhDFA:1742693746471&q=valle+sagrado&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvK9uZj3HA_MTJAA6lXR8yQOHuLLuvP9rOMou0fHm-Hy-mC-Pv8f2PTwze9-G1uaEkd72q8JPB-wreI6OjWdma36QgE6kpT3DAOR00hweQ6Zajrs5MhIzYOt_6wR3i79v1qQhBEjSpzd62hOBQs2l1zG2Af6heIBdwtKVhgcQfWExf0mPlF_jSyEi47TjVKNhzGBEQnA&sa=X&ved=2ahUKEwjuwteNiJ-MAxVvLbkGHWgbFhEQtKgLegQIDhAB&biw=812&bih=762&dpr=1.25" target="_blank" rel="noopener noreferrer">
+
+                <img style="width: 500px; border-radius: 20px;" src="img/valle_sagrado.jpg" alt="Valle Sagrado">
+            </a>
+            <div style="display: flex; flex-direction: column; justify-content: start; gap: 40px;">
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Naturaleza y Cultura</p>
+                        <li>Andenes de Moray</li>
+                        <li>Salineras de Maras</li>
+                        <li>Laguna Humantay</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Sitios Historicos y arqueológicas</p>
+                        <li>Ollantaytambo</li>
+                        <li>Pisac</li>
+                        <li>Chinchero</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Cultura y Artesania</p>
+                        <li>talleres de tejido</li>
+                        <li>Mercado de Pisac</li>
+                        <li>Degustación de Cuy</li>
+                    </ul>
+
+                    <ul style="margin: 0;">
+                        <p style="font-weight: bold;">Ubicación</p>
+                        <li><a href="https://maps.app.goo.gl/tW6kbHmn3GmjUU8y6" target="_blank" rel="noopener noreferrer">Valle Sagrado</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35676.80379529197!2d-72.11353547858396!3d-13.331123432976591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916ddc67b07f175f%3A0xec350c3572844d9!2sValle%20Sagrado!5e0!3m2!1ses!2spe!4v1742693691660!5m2!1ses!2spe" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr><br>
+    </div>
+
+    <button style="width: 200px; font-size: 25px; padding: 15px; background-color: black">
+        <a style="text-decoration: none; color: white;" href="#Inicio">Volver al Inicio</a>
+    </button>
+    <br>
+
+    <footer style="background-color: black; color: white; margin: auto 0 0 0;">
+        <p style="text-align: center;">Andree Ismodes &copy; 2025</p>
+    </footer>
+    <!-- Importar los scripts -->
+    <script src="../Javascript/ejemplo.js" async defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+
 </html>
