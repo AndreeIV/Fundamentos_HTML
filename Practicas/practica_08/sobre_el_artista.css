@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh; font-family: Arial, Helvetica, sans-serif; width: 100wh; text-align: start; display: flex; flex-direction: column;
+    background-color: #0e0e0e;
+}
+.separador {
+    height: 1px;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+.redes_sociales {
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+
+    a {
+        cursor: pointer;
+        
+        img {
+            
+            width: 50px;
+            height: 50px;
+            transition: scale 0.5s ease;
+            
+        }
+
+        img:hover {
+            scale: 1.2;
+        }
+    }
+} 
+
+.navegacion {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    padding: 25px 0;
+
+    border-bottom: 1px solid white;
+    
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        margin: 0;
+        margin-left: 50px;
+
+        
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 0;
+        margin-right: 50px;
+ 
+    }
+}
+
+
+.container {
+    width: 100%;
+
+    .biografia {
+        width: 60%;
+        margin: 70px auto 50px auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+
+        background-color: #1f1f1f;
+        padding: 30px;
+        border-radius: 15px;
+        >img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        p {
+            color: white;
+            text-align: justify;
+            margin: 0;
+        }
+      }
+}
+
+/* !carrera */
+.carrera {
+
+    h2 {
+        color: white;
+        text-align: start;
+        font-size:30px ;
+        margin-left: 100px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+    }   
+
+
+    section {
+    
+        background-color: #1f1f1f;
+        border-radius: 15px;
+        width: 80%;
+        margin: auto;
+        padding: 25px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        article {
+
+            padding: 30px;
+
+            border-radius: 15px;
+            background-color: #ffede5;
+
+            
+            h3 {
+                margin: 0;
+            }
+            p{
+
+            }
+
+            
+        }
+    }
+}
