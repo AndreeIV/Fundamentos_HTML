@@ -1,0 +1,237 @@
+const validaBlogWidget = document.querySelector('.portlet[data-portlet=blogclaro-notices]');
+if (validaBlogWidget) {
+	const btnGlobalBlogCard = document.querySelectorAll('.portlet[data-portlet=blogclaro-notices] .section[data-section] .section__content .notices__item')
+	btnGlobalBlogCard?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var txt_category = el.querySelector(".notices__item__content__main__category").innerText;
+			var lbl_category = formatTextMiddleCSA(txt_category);
+			var txt_titulo = el.querySelector(".notices__item__content__main__title h3").innerText;
+			var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+			var lbl_element = lbl_category+"_"+lbl_titulo;
+			var txt_posicion = i+1;
+			//datalayer
+			etiquetadoGA4("blog_click",lbl_element,"widget_hablando_claro");
+		})
+	})
+}
+if (window?.location?.pathname !== '/personas/movil/postpago/' || window?.location?.pathname !== '/portabilidad/' || window?.location?.pathname !== '/personas/hogar/internet-fibra-optica/') {
+	if(window?.location?.pathname !== '/personas/hogar/internet-fibra-optica/'){
+		const validaProducts = document.querySelector('.sliderTabsPE');
+		if (validaProducts) {
+			//Tabs
+			const btnGlobalProductsTabs = document.querySelectorAll('.sliderTabsPE .sliderTabsMenuPE .stmElement')
+			btnGlobalProductsTabs?.forEach((el, i) => {
+				el?.addEventListener('click', () => {
+					var txt_titulo = el.innerText;
+					var lbl_titulo = formatTextSpecialCSA(txt_titulo);
+					var lbl_element = "tab_"+lbl_titulo;
+					//datalayer
+					etiquetadoGA4("global_click",lbl_element,"tarjetas de producto");
+				})
+			})
+			//Products
+			const btnGlobalProductsItem = document.querySelectorAll('.cardPe .cardPePrinButtons .cardPePrinButtonsWrap .btnPrimario')
+			btnGlobalProductsItem?.forEach((el, i) => {
+				el?.addEventListener('click', () => {
+					var txt_category = document.querySelector(".sliderTabsPE .sliderTabsMenuPE .stmElement.active").innerText;
+					var lbl_category = formatTextMiddleCSA(txt_category);
+					var txt_price = el.closest('.cardPe').querySelector('.cardPeTitle .cardPeTPrice').innerText;
+					var lbl_price = formatTextMiddleCSA(txt_price);
+					var txt_titulo = el.closest('.owl-item').querySelector('div[data-badge]').getAttribute('data-badge');
+					var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+					var lbl_element = txt_titulo;
+					var lbl_seccion = "tarjetas de producto - "+lbl_category;
+					//datalayer
+					etiquetadoGA4("global_click",lbl_element,lbl_seccion);
+				})
+			})
+			const loadGlobal = document.getElementById('main');
+			//paquetes premium > contenido dom
+			loadGlobal?.addEventListener("click", function(event) {
+				//Mas detalles
+				var btnGlobalVerDetalles = event.target.closest('.cardPe .cardPePrinButtons .cardPePrinButtonsWrap .textLink');
+				if(btnGlobalVerDetalles){
+					var txt_category = document.querySelector(".sliderTabsPE .sliderTabsMenuPE .stmElement.active").innerText;
+					var lbl_category = formatTextMiddleCSA(txt_category);
+					//session
+					var txt_titulo = btnGlobalVerDetalles.closest('.owl-item').querySelector('div[data-badge]').getAttribute('data-badge');
+					var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+					var lbl_element = "btn_saber-mas_"+lbl_titulo;
+					var lbl_seccion = "tarjetas de producto - "+lbl_category;
+					//session
+					sessionStorage.removeItem("csaactitle");
+					sessionStorage.setItem("csaactitle", lbl_titulo);
+					//datalayer
+					etiquetadoGA4("global_click",lbl_element,lbl_seccion);
+				}
+			})
+			const loadGlobalv2 = document.getElementById('contentBody');
+			//paquetes premium > contenid dom
+			loadGlobalv2?.addEventListener("click", function(event) {
+				//Partidos - close
+				var btnGlobalVerDetallesClose = event.target.closest('.fancybox-slide--html .fancybox-close-small');
+				if (btnGlobalVerDetallesClose) {
+					//session
+					let datatitle = sessionStorage.getItem("csaactitle");
+					sessionStorage.removeItem("csaactitle");
+					var lbl_titulo = datatitle;
+					var lbl_element = "popup_"+lbl_titulo+"_open";
+					var txt_category = document.querySelector(".sliderTabsPE .sliderTabsMenuPE .stmElement.active").innerText;
+					var lbl_category = formatTextMiddleCSA(txt_category);
+					var lbl_seccion = "tarjetas de producto - "+lbl_category;
+					//datalayer
+					etiquetadoGA4("global_click",lbl_element,lbl_seccion);
+				}
+			})
+		}
+	}
+}
+const validaFooter = document.querySelector('footer');
+if (validaFooter) {
+	//footer - links
+	const footerLinks = document.querySelectorAll('.footer .footerCat .footerCatBody > ul li a')
+	footerLinks?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var txt_category = el.closest(".footerCat").querySelector(".footerCatHeader").innerText;
+			var lbl_category = formatTextMiddleCSA(txt_category);
+			var txt_titulo = el.innerText;
+			var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+			var lbl_element = lbl_category+"_"+lbl_titulo;
+			//datalayer
+			etiquetadoGA4("global_click",lbl_element,"footer - links");
+		})
+	})
+	//footer - redes
+	const footerRedes = document.querySelectorAll('.footer .footerRS .icoRs')
+	footerRedes?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var iconElement = el.querySelector('i');
+			var txt_titulo = Array.from(iconElement.classList).find(cls => cls.startsWith('ico-'));
+			var lbl_titulo = txt_titulo.split('-')[1];
+			var lbl_element = lbl_titulo;
+			//datalayer
+			etiquetadoGA4("global_click",lbl_element,"footer - redes");
+		})
+	})
+	//footer - legales
+	const footerLegales = document.querySelectorAll('.footerLower .listMenu a')
+	footerLegales?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var txt_titulo = el.innerText;
+			var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+			var lbl_element = lbl_titulo;
+			//datalayer
+			etiquetadoGA4("global_click",lbl_element,"footer - legales");
+		})
+	})
+	//footer - otros
+	const footerOtros = document.querySelectorAll('.footerClaroCol2InfLink')
+	footerOtros?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var imgAlt = el.querySelector('img')?.getAttribute('alt') || '';
+			if (imgAlt.includes("Boton")) {
+				imgAlt = imgAlt.replace("Boton", "").trim();
+			}
+			var txt_titulo = imgAlt;
+			var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+			var lbl_element = lbl_titulo;
+			//datalayer
+			etiquetadoGA4("global_click",lbl_element,"footer - otros");
+		})
+	})
+}
+/*const validaCintillo = document.querySelector('section.cintillo.c89pe');
+if (validaCintillo) {
+	var home_seccion = "cintillo - navidad";
+	//Impresion - datalayer
+	etiquetadoGA4("globalext_click","impresion",home_seccion);
+	//Etiquetados temporales - Ciber Wow
+	const globalAdsVermas = document.querySelectorAll('.e1-sorteo-counter__footer a span')
+	globalAdsVermas?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var lbl_element = "btn_ver-mas";
+			var lbl_seccion = home_seccion;
+			//datalayer
+			etiquetadoGA4("globalext_click",lbl_element,lbl_seccion);
+		})
+	})
+	//Etiquetados temporales - ir tienda
+	const globalAdsVermas = document.querySelectorAll('.cintillo a')
+	globalAdsVermas?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var lbl_element = "btn_ir-tienda";
+			var lbl_seccion = home_seccion;
+			//datalayer
+			etiquetadoGA4("globalext_click",lbl_element,lbl_seccion);
+		})
+	})
+	const globalAdsClose = document.querySelectorAll('.e1-sorteo-counter__close')
+	globalAdsClose?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var lbl_element = "btn_close";
+			var lbl_seccion = home_seccion;
+			//datalayer
+			etiquetadoGA4("globalext_click",lbl_element,lbl_seccion);
+		})
+	})
+}*/
+// Verifica si existe el cintillo
+const validaCintillo = document.querySelector('section.cintillo.c89pe');
+if (validaCintillo) {
+    var home_seccion = "cintillo - navidad";
+    
+    // Impresión inicial
+    etiquetadoGA4("globalext_click", "impresion", home_seccion);
+
+    // Función genérica para agregar eventos si no están ya añadidos
+    function addEventIfNeeded(selector, event, handler, lbl_element) {
+        document.querySelectorAll(selector).forEach((el) => {
+            if (!el.dataset.listenerAdded) { // Evita agregar eventos duplicados
+                el.addEventListener(event, () => {
+                    handler(lbl_element);
+                });
+                el.dataset.listenerAdded = "true"; // Marca como manejado
+            }
+        });
+    }
+
+    // Función para manejar el etiquetado
+    function handleGA4(lbl_element) {
+        var lbl_seccion = home_seccion;
+        etiquetadoGA4("globalext_click", lbl_element, lbl_seccion);
+    }
+
+    // Configuración del observador de mutaciones
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+            if (mutation.type === "childList") {
+                // Etiquetados temporales - "ver más"
+                addEventIfNeeded('.e1-sorteo-counter__footer a span', 'click', handleGA4, "btn_ver-mas");
+
+                // Etiquetados temporales - "ir tienda"
+                addEventIfNeeded('.cintillo a', 'click', handleGA4, "btn_ir-tienda");
+
+                // Etiquetados temporales - "cerrar"
+                addEventIfNeeded('.e1-sorteo-counter__close', 'click', handleGA4, "btn_close");
+            }
+        }
+    });
+
+    // Inicia el observador
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true, // Observa cambios en todos los descendientes
+    });
+}
+/*if(mypath == '/personas/') {
+	const menuMobile = document.querySelectorAll('.c04Wrap.c04Wrapv2 .c04 .c04Items .c04Item .cardSupportV2')
+	menuMobile?.forEach((el, i) => {
+		el?.addEventListener('click', () => {
+			var txt_titulo = el.querySelector(".cardSupportV2Cont h3").innerText;
+			var lbl_titulo = formatTextMiddleCSA(txt_titulo);
+			var lbl_element = lbl_titulo;
+			//datalayer
+			etiquetadoGA4("btn_home", lbl_element, "menu mobile");
+		})
+	})
+}*/

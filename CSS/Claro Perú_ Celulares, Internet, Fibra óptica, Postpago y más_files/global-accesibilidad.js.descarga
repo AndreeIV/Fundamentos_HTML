@@ -1,0 +1,74 @@
+function determinarCategoria(url) {
+	if (url.startsWith("/empresas/")) {
+		return "empresas";
+	}else if (url.startsWith("/negocios/")) {
+		return "empresas";
+	}else if (url.startsWith("/personas/")) {
+		return "personas";
+	} else {
+		return "personas"; // Por defecto
+	}
+}
+var fmyurl = window?.location?.pathname;
+var fmysegmento = determinarCategoria(fmyurl);
+const GlobalAllBtnAccess = document.querySelectorAll('#js-btnCMenuAccesabilidad')
+GlobalAllBtnAccess?.forEach((el, i) => {
+	el?.addEventListener('click', () => {
+		// DataLayer
+		const data_array = {
+			'eventLabel': "logo accesibilidad",
+			'seccion': "accesibilidad",
+			'element': "btn",
+			'segmento': fmysegmento
+		};
+		etiquetadoG4New("element_click", data_array);
+	})
+})
+const GlobalAllAccessTab = document.querySelectorAll('.cMenuAccesabilidad .cMenuA-featuresBtn')
+GlobalAllAccessTab?.forEach((el, i) => {
+	el?.addEventListener('click', () => {
+		var txt_text = el.innerText;
+		var lbl_text = formatTextSpaceCSA(txt_text);
+		// DataLayer
+		const data_array = {
+			'eventLabel': lbl_text,
+			'seccion': "accesibilidad",
+			'sub_seccion': "menu de accesibilidad",
+			'element': "btn",
+			'segmento': fmysegmento
+		};
+		etiquetadoG4New("element_click", data_array);
+	})
+})
+var loadGlobal = document.getElementById('contentBody');
+// Eventos Click
+loadGlobal?.addEventListener("click", function(event) {
+	var GlobalAllAccessSubTab = event.target.closest('.cMenuA-layerStructure .cMenuA-structureTabsTab');
+	if (GlobalAllAccessSubTab) {
+		var txt_text = GlobalAllAccessSubTab.innerText;
+		var lbl_text = formatTextSpaceCSA(txt_text);
+		// DataLayer
+		const data_array = {
+			'eventLabel': lbl_text,
+			'seccion': "accesibilidad",
+			'sub_seccion': "menu de accesibilidad – estructura de la pagina",
+			'element': "btn",
+			'segmento': fmysegmento
+		};
+		etiquetadoG4New("element_click", data_array);
+	}
+	var GlobalAllAccessSubOptions = event.target.closest('.cMenuA-layerStructure .cMenuA-structureListHsItem');
+	if (GlobalAllAccessSubOptions) {
+		var txt_text = GlobalAllAccessSubOptions.innerText;
+		var lbl_text = formatTextSpaceCSA(txt_text);
+		// DataLayer
+		const data_array = {
+			'eventLabel': lbl_text,
+			'seccion': "accesibilidad",
+			'sub_seccion': "menu de accesibilidad – estructura de la pagina",
+			'element': "btn",
+			'segmento': fmysegmento
+		};
+		etiquetadoG4New("element_click", data_array);
+	}
+})
