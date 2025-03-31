@@ -1,0 +1,62 @@
+/* *Elabora una presentación, que contenga un h2 como titulo y 3 etiquetas de tipo "p" para los parrafos, asigna los selectores de tipo clase */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* width: 100vw; */
+    font-family:"Winky Sans", sans-serif;
+    background-color: #bdbdbd;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffc2c2;
+    border-radius: 10px;
+    border: 2px dotted gray;
+    box-shadow: 0 0 20px black;
+}
+.main:hover {
+    background-color: wheat;
+
+    .contenido {
+        margin-bottom: 50px;
+    }
+
+    .titulo {
+        margin-bottom: 35px;
+    }
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    color: green;
+    border-color: orange red;
+    border-width: 5px;
+    border-style: solid;
+    transition: scale 1s ease-out;
+    transition: margin 1s ease-out;
+    background-color: #fff;
+}
+.contenido {
+    font-size: 1.1em;
+    line-height: 1.8;
+    /* margin-bottom: 15px; */
+    color: black;
+    transition: margin 1s ease;
+}
+.titulo:hover {
+    background-color: rgb(204, 204, 204);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    
+    scale: 1.2;
+}

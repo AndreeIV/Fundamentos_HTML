@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* width: 100vw; */
+    font-family:"Winky Sans", sans-serif;
+    background-color: #f0f0f0;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px dotted gray;
+    box-shadow: 0 0 20px black;
+}
+.container:hover {
+    background-color: wheat;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    color: red;
+    border-color: red black green;
+    border-width: 5px;
+    border-style: solid;
+    transition: scale 1s ease-out;
+    background-color: #fff;
+}
+.content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: blue;
+}
+.title:hover {
+    background-color: yellow;
+    text-transform: uppercase;
+    scale: 1.2;
+}

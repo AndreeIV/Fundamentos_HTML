@@ -1,0 +1,28 @@
+p {
+    text-align: justify;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: scale 1s ease;
+
+    margin: 25px;
+    padding: 15px;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    transition: scale 1s ease;
+    margin: 0;
+    padding: 0;
+}
+
+h1:hover, p:hover {
+    color: black;
+    scale: 1.2;
+
+}
