@@ -1,0 +1,30 @@
+/* ?Estilos para el contenedor */
+.caja {
+    width: 400px;
+    height: 300px;
+
+    margin: 10px;
+    border: 4px solid #333;
+    background-color: rgb(160, 228, 213);
+    padding: 20px;
+}
+
+
+/* !Estilos para el padding */
+.caja > .padding {
+    background-color: rgb(203, 168, 236);
+    padding: 20px;
+}
+
+/* *Estilos para el contenido dentro del padding */
+.caja > .padding > .content {
+    background-color: coral;
+    padding: 10px;
+    border: 5px dashed #333;
+}
+
+/* !Estilos para el margen */
+.caja > .margen {
+    background-color: bisque;
+    margin: 20px;
+}

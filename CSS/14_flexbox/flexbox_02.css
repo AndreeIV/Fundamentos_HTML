@@ -1,0 +1,22 @@
+.container {
+    background-color: burlywood;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    align-items: flex-start;    
+    gap: 20px;
+
+    /* padding: 10px; */
+}
+
+.item {
+    /* width: 100%; */
+    background-color: lightblue;
+    padding: 10px;
+}
