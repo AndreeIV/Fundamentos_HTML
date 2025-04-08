@@ -35,16 +35,25 @@
         .container_text {
 
             color: white;
-            position: absolute;
-            text-align: start;
-            top: 10%;
-            left: 5%;
+            position: absolute; /* Posiciona el texto sobre la imagen */
+      top: 50%; /* Centra verticalmente */
+      left: 50%; /* Centra horizontalmente */
+      transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
 
             h2 {
                 font-size: 30px;
+                border-width: 5px;
+                border-color: red green blue;
+                border-style: solid;
+                text-align: center;
             }
             p {
-                width: 350px;
+                width: 400px;
+                border-width: 5px;
+                border-color: orange orangered red;
+                border-style: solid;
+                text-align: center;
+
             }
             ul {
                 width: 280px;
@@ -57,10 +66,7 @@
             <div class="container_text">
                 <h2>Bienvenido a SENATI</h2>
                 <p>Proporciona formación y capacitación profesional en actividades industriales y también para labores en instalaciones, reparaciones y mantenimiento para cualquier otra actividad económica.</p>
-                <ul>
-                    <li>Formar profesionales técnicos innovadores y altamente productivos.</li><br>
-                    <li>Liderar en América Latina la excelencia en formación profesional tecnológica.</li>
-                </ul>
+                
             </div>
 
             <img src="/Practicas/img/banner_senati.jpg" alt="">
